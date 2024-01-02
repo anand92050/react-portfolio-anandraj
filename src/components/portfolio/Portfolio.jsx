@@ -7,11 +7,6 @@ import IMG4 from '../../assets/project_image/img4.jpg'
 import IMG5 from '../../assets/project_image/img5.jpg'
 import IMG6 from '../../assets/project_image/img6.jpg'
 import IMG7 from '../../assets/project_image/img7.jpg'
-// import IMG9 from '../../assets/projects_images/project-9.png'
-// import IMG10 from '../../assets/projects_images/project-10.png'
-// import IMG11 from '../../assets/projects_images/project-11.png'
-// import IMG12 from '../../assets/projects_images/project-12.png'
-// import IMG13 from '../../assets/projects_images/project-13.jpg'
 
 import PortFolioItem from './portfolioitem'
 
@@ -30,8 +25,8 @@ const datas = [
       ' Awesome UI Pages',
       'Smooth Scrolling'
     ],
-    github: '#',
-    live: '#'
+    github: 'https://github.com/anand92050/react-portfolio-anandraj',
+    live: 'https://react-portfolio-anandraj.vercel.app/portfolio'
   },
   {
     id: "2",
@@ -99,10 +94,7 @@ const datas = [
     description: 'This is a Dev-Detective which is made using github API.',
     tools_tech: ['HTML', 'CSS', 'JavaScript'],
     features: [
-      // 'Difficulty Easy, Medium or Hard',
-      // 'Score',
-      // 'Game Over Screen',
-      // 'Main Menu Screen'
+      
     ],
     github: 'https://github.com/anand92050/DevDetective-Web',
     live: 'https://anand92050.github.io/DevDetective-Web/'
@@ -145,12 +137,6 @@ const Portfolio = () => {
           return <PortFolioItem key={data.id} data={data} />
         })}
       </div>
-      {/* <h3 className="portfolio__heading">Collaborative Projects</h3>
-      <div className="container portfolio__container">
-        {data2.map(data => {
-          return <PortFolioItem key={data.id} data={data} />
-        })}
-      </div> */}
     </section>
   )
 }
